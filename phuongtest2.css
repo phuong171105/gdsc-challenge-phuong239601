@@ -41,7 +41,7 @@ body{
     max-height: 4000px ;
     width: 100%;
     display: grid;
-    grid-template-rows: 80px 750px 1000px 1000px 900px;
+    grid-template-rows: 80px 750px 550px 1000px 900px;
 }
 .avatar {
     width: 65px;
@@ -175,7 +175,39 @@ body{
     left: 100px;
 }
 /*said*/
-/*footer*/
+#said {
+    display: grid;
+    grid-template-rows: 50px 400px 70px;
+    padding-top: 100px;
+}
+#said h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.said__avatar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.box{
+    background-color: var(--Bright-Red);
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box img {
+    position: relative;
+    top: -30px;
+}
+#said a {
+    display: flex;
+    justify-content: center;
+}
 
-
-
+/*footer
