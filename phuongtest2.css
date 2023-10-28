@@ -6,29 +6,21 @@
     box-sizing: border-box;
 }
  html{ scroll-behavior: smooth;}
- body{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    color: var(--Very-Dark-Blue);
-}
 
 img {
     max-width: 100%;
     width: 100%;
 }
-
+ button {
+    font-family: 'Be Vietnam Pro', sans-serif ;
+    font-size: 16px;
+ }
 .container {
-    max-width: 1440px;
-    width: 100%;
     margin:0 auto;
     padding: 0;
 }
 
-header {
-    z-index: 5;
-}
+header { z-index: 5; }
 
 :root {
     --Bright-Red: hsl(12, 88%, 59%); 
@@ -39,6 +31,23 @@ header {
     --Vary-Light-Gray: hsl(0, 0%, 98%); 
 }
 
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+    max-width: 1440px;
+    max-height: 4000px ;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 80px 750px 1000px 1000px 900px;
+}
+.avatar {
+    width: 65px;
+}
+
+/*header*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -84,22 +93,29 @@ header {
     opacity: 0.7;
 }
 
-.banner__img2{
-    width: 650px;
-    position: relative;
-    height: 25vh;
-    display: flex;
-    align-items: center;
-    top: 50px;
-    left: 840px;
+.img2{
+    width: 700px;
+    position: absolute;
+    height: 600px;
+    top: -50px;
+    left: 835px;
     z-index: -1;
 }
-.banner__img1 {
+.img3{
+    width: 700px;
     position: absolute;
-    width: 530px;
-    top: 120px;
-    left: 720px;
-    padding: 20px;
+    height: 25vh;
+    top: 1220px; 
+    left: -400px;
+    z-index: -1;
+}
+
+/*banner*/
+.banner__img1 {
+    position: relative;
+    width: 650px;
+    top: 50px;
+    padding: 20px 30px 20px 0;
     z-index: 1;
 }
 
@@ -108,15 +124,58 @@ header {
 .banner__heading p { 
     color: var(--Dark-Gray-Blue);
     padding: 25px 0 30px 0;
-    max-width: 350px;
+    width: 350px;
 }
 .banner__heading {
+    position: relative;
+    top:125px;
+    left: 85px;
+    margin: 20px;
     max-width: 500px;
     text-align: left;
-    position: absolute;
-    left: 100px;
+}
+#banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+/*content*/
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+.content2__khung {
+    display: grid;
+    grid-template-columns: 110px 500px;
+    padding: 25px 50px;
+}
+.content__nut {
+    border: none;
+    width: 70px;
+    border-radius: 50px;
+    background-color: var(--Bright-Red);
+    color: var(--Very-Pale-Red);
+    padding: 10px;
+}
+.content2__khung p {
+    color: var(--Dark-Gray-Blue);
+    padding-top: 20px;
+}
+.content1 h1 {
+    font-size: 40px;
+    padding: 30px 0;
+    max-width: 500px;
+}
+.content1 p {
+    max-width: 350px;
+}
+.content1 {
+    position: relative;
+    left: 100px;
+}
+/*said*/
+/*footer*/
 
 
 
