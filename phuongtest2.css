@@ -43,7 +43,7 @@ body{
     max-height: 4000px ;
     width: 100%;
     display: grid;
-    grid-template-rows: 80px 750px 550px 750px 900px;
+    grid-template-rows: 80px 750px 550px 750px 425px;
 }
 .avatar {
     width: 65px;
@@ -163,6 +163,7 @@ body{
 .content2__khung p {
     color: var(--Dark-Gray-Blue);
     padding-top: 20px;
+    max-width: 450px;
 }
 .content1 h1 {
     font-size: 40px;
@@ -197,11 +198,12 @@ body{
 }
 .box{
     background-color: var(--Vary-Light-Gray);
-    width: 400px;
+    width: 450px;
     height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .box img {
     position: relative;
@@ -210,23 +212,15 @@ body{
 #said a {
     text-align: center;
 }
-
+.said__text p{
+    padding-top: 30px;
+    color: var(--Dark-Gray-Blue);
+    max-width: 350px;
+}
 /*footer*/
 #end {
     display: grid;
-    grid-template-rows: 280px 430px ;
-}
-.icon img {
-    width: 20px;
-    background-color: var(--Bright-Red);
-}
-.end__black {
-    background-color: var(--Very-Dark-Blue);
-    width: 100%;
-    z-index: -1;
-}
- .logo {
-    filter: invert(1);
+    grid-template-rows: 200px 220px ;
 }
 .end__orange svg {
     background-color: var(--Bright-Red);
@@ -234,7 +228,7 @@ body{
 }
 .end__heading {
     position: absolute;
-    top: 2217px;
+    top: 2175px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -242,12 +236,13 @@ body{
     font-size: 45px;
     color: var(--Vary-Light-Gray);
     max-width: 700px;
-    padding: 0 80px;
+    padding: 0 85px;
 }
 .end__heading .end__nut {
     position: relative;
-    top: 20px;
-    left: 400px;
+    top: 30px;
+    left: 440px;
+    height: 50px;
     background-color: var(--Very-Pale-Red);
     font-weight: 600;
     border: none;
@@ -256,5 +251,80 @@ body{
     padding: 12px 25px;
     transition: all 0.4s ease 0s;
     color: var(--Bright-Red);
+}
+.end__heading .end__nut:hover {
+    opacity: 0.7;
+}
+
+ .icon img {
+    width: 20px;
+    position: relative;
+    bottom: 25px;
+}
+.icon img:hover {
+    background-color: var(--Bright-Red);
+}
+.end__black {
+    background-color: var(--Very-Dark-Blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+}
+.end__img {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.end__img ul {
+    display: flex;
+    justify-content: space-between;
+}
+.end__img .logo {
+    width: 160px;
+}
+.end__link{
     list-style: none;
+    transition: all 0.4s ease 0s;
+    padding: 5px 0;
+    position: relative;
+    top: 20px;
+}
+.end__link a {
+    color: var(--Vary-Light-Gray);
+}
+.end__link a:hover {
+    color: var(--Bright-Red);
+}
+input[type=text] {
+    border: 1px solid var(--Bright-Red);
+    color: var(--Bright-Red);
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+}
+.inbox__nut {
+    border: none;
+    background-color: var(--Bright-Red);
+    border-radius: 50px;
+    color: var(--Very-Pale-Red);
+    width: 60px;
+    height: 40px;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+::placeholder {
+    color: var(--Bright-Red);
+    font-family: 'Be Vietnam Pro', sans-serif ;
+    padding: 5px 10px;
+}
+.end__inbox p {
+    color: var(--Dark-Gray-Blue);
+    font-size: 13px;
+    padding: 45px 0 0 40px;
 }
