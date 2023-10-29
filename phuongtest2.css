@@ -14,6 +14,8 @@ img {
  button {
     font-family: 'Be Vietnam Pro', sans-serif ;
     font-size: 16px;
+    list-style: none;
+    cursor: pointer;
  }
 .container {
     margin:0 auto;
@@ -27,7 +29,7 @@ header { z-index: 5; }
     --Dark-Blue: hsl(228, 39%, 23%);
     --Dark-Gray-Blue: hsl(227, 12%, 61%);
     --Very-Dark-Blue: hsl(233, 12%, 13%);
-    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Very-Pale-Red: #ffefeb;
     --Vary-Light-Gray: hsl(0, 0%, 98%); 
 }
 
@@ -41,7 +43,7 @@ body{
     max-height: 4000px ;
     width: 100%;
     display: grid;
-    grid-template-rows: 80px 750px 550px 1000px 900px;
+    grid-template-rows: 80px 750px 550px 750px 900px;
 }
 .avatar {
     width: 65px;
@@ -181,7 +183,7 @@ body{
     padding-top: 100px;
 }
 #said h1 {
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,7 +196,7 @@ body{
     padding-top: 80px;
 }
 .box{
-    background-color: var(--Bright-Red);
+    background-color: var(--Vary-Light-Gray);
     width: 400px;
     height: 250px;
     display: flex;
@@ -206,8 +208,53 @@ body{
     top: -30px;
 }
 #said a {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-/*footer
+/*footer*/
+#end {
+    display: grid;
+    grid-template-rows: 280px 430px ;
+}
+.icon img {
+    width: 20px;
+    background-color: var(--Bright-Red);
+}
+.end__black {
+    background-color: var(--Very-Dark-Blue);
+    width: 100%;
+    z-index: -1;
+}
+ .logo {
+    filter: invert(1);
+}
+.end__orange svg {
+    background-color: var(--Bright-Red);
+    z-index: -5;
+}
+.end__heading {
+    position: absolute;
+    top: 2217px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.end__heading h1 {
+    font-size: 45px;
+    color: var(--Vary-Light-Gray);
+    max-width: 700px;
+    padding: 0 80px;
+}
+.end__heading .end__nut {
+    position: relative;
+    top: 20px;
+    left: 400px;
+    background-color: var(--Very-Pale-Red);
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 12px 25px;
+    transition: all 0.4s ease 0s;
+    color: var(--Bright-Red);
+    list-style: none;
+}
