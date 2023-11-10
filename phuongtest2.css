@@ -4,6 +4,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    max-width: 1440px;
 }
  html{ scroll-behavior: smooth;}
 
@@ -25,7 +26,7 @@ img {
 header { z-index: 5; }
 
 :root {
-    --Bright-Red: hsl(12, 88%, 59%); 
+    --Bright-Red: #f25f3b; 
     --Dark-Blue: hsl(228, 39%, 23%);
     --Dark-Gray-Blue: hsl(227, 12%, 61%);
     --Very-Dark-Blue: hsl(233, 12%, 13%);
@@ -189,15 +190,27 @@ body{
     justify-content: center;
     align-items: center;
 }
+.slider {
+    position: relative;
+}
+.said__avatar::-webkit-scrollbar {
+    display: none;
+}
+.said__khung {
+    padding: 0 15px;
+}
 .said__avatar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    display: flex;
+    display:  flex;
     justify-content: space-between;
+    max-width: 100%;
+    width: 1440px;
+    overflow: auto;
+    margin: 20px auto;
     padding-top: 80px;
 }
 .box{
-    background-color: var(--Vary-Light-Gray);
+   /* background-color: var(--Vary-Light-Gray);*/
+   background-color: #f25f3b;
     width: 450px;
     height: 250px;
     display: flex;
@@ -205,6 +218,15 @@ body{
     align-items: center;
     text-align: center;
 }
+.dot {
+    opacity: 0;
+}
+/*.dot {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+}*/
 .box img {
     position: relative;
     top: -30px;
@@ -215,7 +237,7 @@ body{
 .said__text p{
     padding-top: 30px;
     color: var(--Dark-Gray-Blue);
-    max-width: 350px;
+    max-width: 400px;
 }
 /*footer*/
 #end {
@@ -256,13 +278,17 @@ body{
     opacity: 0.7;
 }
 
- .icon img {
-    width: 20px;
+ .icon a {
     position: relative;
     bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: var(--Vary-Light-Gray);
+    transition: all 0.4s ease;
 }
-.icon img:hover {
-    background-color: var(--Bright-Red);
+.icon a:hover {
+     color: #f25f3b;
 }
 .end__black {
     background-color: var(--Very-Dark-Blue);
@@ -293,6 +319,7 @@ body{
     top: 20px;
 }
 .end__link a {
+    text-decoration: none;
     color: var(--Vary-Light-Gray);
 }
 .end__link a:hover {
@@ -304,6 +331,7 @@ input[type=text] {
     border-radius: 50px;
     width: 200px;
     height: 40px;
+    padding: 0 15px;
 }
 .inbox__nut {
     border: none;
